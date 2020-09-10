@@ -1,0 +1,51 @@
+.discoverContainer {
+  .discover {
+    width: 350px;
+    padding: 0 15px;
+
+    &__search {
+    }
+    &__trends {
+      background-color: $search;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    &__trendsTitle {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+
+      i {
+        color: $blue;
+      }
+    }
+    &__trendsItem {
+      font-weight: bold;
+      padding: 15px 0;
+      margin-bottom: 0;
+    }
+    &__trendsShowMore {
+      padding: 15px 0;
+      margin-bottom: 0;
+    }
+    &__who {
+      background-color: $search;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    &__whoTitle {
+    }
+    &__whoShowMore {
+    }
+    &__copyright {
+    }
+  }
+}

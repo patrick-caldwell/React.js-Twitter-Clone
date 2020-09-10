@@ -1,0 +1,45 @@
+.accountPreview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  border-bottom: 1px solid $outline;
+
+  &__details {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &__names {
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+  &__at {
+    color: $gray;
+    margin-bottom: 0;
+  }
+  &__at::before {
+    content: "@";
+  }
+  &__follow {
+    width: 80px;
+    height: 30px;
+    border: 1px solid $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    cursor: pointer;
+  }
+}

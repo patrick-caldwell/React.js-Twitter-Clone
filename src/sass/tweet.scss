@@ -1,0 +1,79 @@
+.tweet {
+  width: 600px;
+  padding: 10px 15px;
+  background-color: $background;
+  display: flex;
+  border: 1px solid $outline;
+  border-top: none;
+
+  &__pfp {
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    display: flex;
+  }
+  &__info > * {
+    margin-right: 10px;
+  }
+  &__name {
+    font-weight: bold;
+  }
+  &__at::before {
+    content: "@";
+  }
+  &__at,
+  &__age {
+    color: $gray;
+  }
+  &__text {
+  }
+  &__interactions {
+    display: flex;
+    align-items: center;
+    user-select: none;
+
+    & > * {
+      margin-right: 1em;
+      //padding: $hoverRadius;
+      color: $gray;
+      display: flex;
+      border-width: 50%;
+
+      p {
+        margin: 0;
+        padding: 0.25em 0;
+      }
+
+      i {
+        padding: 0.25em;
+      }
+    }
+  }
+
+  &__likes {
+    &:hover {
+      color: $like;
+    }
+
+    .fas.fa-heart {
+      color: $like;
+    }
+
+    &--isLiked {
+      color: $like;
+    }
+  }
+
+  &__replies,
+  &__retweets,
+  &__likes {
+  }
+}

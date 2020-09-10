@@ -1,0 +1,76 @@
+.timeline {
+  .tlTweet {
+    display: flex;
+    height: 112px;
+    padding: 10px 15px;
+    border: 1px solid $outline;
+    border-bottom-width: 10px;
+
+    img {
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    &__content {
+      width: 509px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__input {
+      margin-left: 7.5px;
+      padding: 10px 0;
+      background-color: $background;
+      border: none;
+      width: 100%;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: $white;
+      resize: none;
+    }
+    &__input:focus {
+      outline: none;
+    }
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__icons {
+      display: flex;
+      a {
+        color: $blue;
+        text-decoration: none;
+        font-size: 22px;
+        margin-right: 14.5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+      }
+
+      a:hover {
+        background-color: $search;
+      }
+    }
+    &__button {
+      width: 75px;
+      height: 37px;
+      font-weight: bold;
+      background-color: $blue;
+      border-bottom-left-radius: 9999px;
+      border-bottom-right-radius: 9999px;
+      border-top-left-radius: 9999px;
+      border-top-right-radius: 9999px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__button:hover {
+      cursor: pointer;
+    }
+  }
+}
